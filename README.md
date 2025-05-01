@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/btcblade/opbets">
-    <img src="react-app/public/favicon.ico" alt="Logo" width="80" height="80" style="background-color:white">
+    <img src="frontend/public/favicon.ico" alt="Logo" width="80" height="80" style="background-color:white">
   </a>
 
   <h3 align="center">OPBets</h3>
@@ -89,6 +89,7 @@ To get a local copy up and running follow these simple steps.
 Here is everything we need you to do to get started with Skybnb.
 
 - npm
+
   ```sh
   npm install npm@latest -g
   ```
@@ -96,24 +97,33 @@ Here is everything we need you to do to get started with Skybnb.
 ### Installation
 
 1. Clone the repo
+
    ```sh
    git clone https://github.com/btcblade/opbets
    ```
+
 2. Install NPM packages
+
    ```sh
    npm install
    ```
+
 3. Add a '.env' with your environment variables to the root of your local directory
 
 4. Create a postgreSQL user
+
    ```sh
    CREATE USER <<your username>> WITH PASSWORD <<your password>> CREATEDB;
    ```
+
 5. Create your database
+
    ```sh
    CREATE DATABASE <<db name>> WITH OWNER <<your username>>;
    ```
+
 6. Upgrade and seed your database
+
    ```sh
    flask db upgrade
    flask seed all
@@ -158,7 +168,7 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 ********************
-email: tommynchen@gmail.com or tcblade@gmail.com
+email: <tommynchen@gmail.com> or <tcblade@gmail.com>
 *******************
 <!-- CONTACT -->
 
