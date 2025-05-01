@@ -27,7 +27,7 @@ const cancelOne = (wagerId) => {
 };
 
 export const cancelOneWager = (wagerId) => async (dispatch) => {
-  const res = await fetch(`http://localhost:5000/api/wagers/cancel/${wagerId}`, {
+  const res = await fetch(`https://opbets.onrender.com/api/wagers/cancel/${wagerId}`, {
     credentials: 'include', // Ensures cookies are sent with the request
     headers: {
       'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ export const cancelOneWager = (wagerId) => async (dispatch) => {
 };
 
 export const loadAllActiveWagers = (user_id) => async (dispatch) => {
-  const res = await fetch(`http://localhost:5000/api/users/active_wagers/${user_id}`, {
+  const res = await fetch(`https://opbets.onrender.com/api/users/active_wagers/${user_id}`, {
     method: 'GET',
     credentials: 'include', // Ensures cookies are sent with the request
     headers: {

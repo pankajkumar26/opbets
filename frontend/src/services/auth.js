@@ -1,5 +1,5 @@
 export const authenticate = async () => {
-  const response = await fetch('http://localhost:5000/api/auth/', {
+  const response = await fetch('https://opbets.onrender.com/api/auth/', {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -8,7 +8,7 @@ export const authenticate = async () => {
 };
 
 export const login = async (email, password) => {
-  const response = await fetch('http://localhost:5000/api/auth/login', {
+  const response = await fetch('https://opbets.onrender.com/api/auth/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ export const login = async (email, password) => {
 };
 
 // export const demoLogin = async () => {
-//   const response = await fetch('http://localhost:5000/api/auth/demo-login', {
+//   const response = await fetch('https://opbets.onrender.com/api/auth/demo-login', {
 //     method: 'POST',
 //     headers: {
 //       'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ export const login = async (email, password) => {
 // };
 
 export const logout = async () => {
-  const response = await fetch('http://localhost:5000/api/auth/logout', {
+  const response = await fetch('https://opbets.onrender.com/api/auth/logout', {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -52,7 +52,7 @@ export const signUp = async (username, email, password) => {
   if (!csrfToken) {
     console.error('CSRF token not found in cookies');
   }
-  const response = await fetch('http://localhost:5000/api/auth/signup', {
+  const response = await fetch('https://opbets.onrender.com/api/auth/signup', {
     method: 'POST',
     credentials: 'include',
     headers: {

@@ -10,7 +10,7 @@ const MatchedWagersContainer = () => {
   const [matched_wagers, setMatchedWagers] = useState([]);
 
   // useEffect(() => {
-  //   fetch(`http://localhost:5000/api/users/${sessionUserId}/matched_wagers`)
+  //   fetch(`https://opbets.onrender.com/api/users/${sessionUserId}/matched_wagers`)
   //     .then((res) => res.json())
   //     .then((data) => {
   //       setMatchedWagers(data[matched_wagers]);
@@ -21,7 +21,7 @@ const MatchedWagersContainer = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch(`http://localhost:5000/api/users/${sessionUserId}/matched_wagers`, {
+      const res = await fetch(`https://opbets.onrender.com/api/users/${sessionUserId}/matched_wagers`, {
         method: 'GET',
         credentials: 'include', // Ensures cookies are sent with the request
         headers: {

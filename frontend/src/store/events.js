@@ -23,7 +23,7 @@ const AAEventsAll = (events_data) => {
 };
 
 export const loadAAEventsAll = () => async (dispatch) => {
-  const res = await fetch('http://localhost:5000/api/events/all/AA');
+  const res = await fetch('https://opbets.onrender.com/api/events/all/AA');
   const data = await res.json();
 
   dispatch(AAEventsAll(data['events_all']));
@@ -31,7 +31,7 @@ export const loadAAEventsAll = () => async (dispatch) => {
 };
 
 export const loadEventsAll = () => async (dispatch) => {
-  const res = await fetch('http://localhost:5000/api/events/all');
+  const res = await fetch('https://opbets.onrender.com/api/events/all');
   const data = await res.json();
 
   dispatch(EventsAll(data['events_all']));
@@ -39,7 +39,7 @@ export const loadEventsAll = () => async (dispatch) => {
 };
 
 export const loadSpecificEvents = (query_str) => async (dispatch) => {
-  const res = await fetch(`http://localhost:5000/api/events/${query_str}`);
+  const res = await fetch(`https://opbets.onrender.com/api/events/${query_str}`);
   const data = await res.json();
 
   dispatch(SpecificEvents(data['specific_events']));

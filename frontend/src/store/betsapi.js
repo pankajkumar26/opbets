@@ -8,7 +8,7 @@ const loadData = (data) => {
 };
 
 export const testLoad = () => async (dispatch) => {
-  const res = await fetch('http://localhost:5000/api/betsapi/req_seeder');
+  const res = await fetch('https://opbets.onrender.com/api/betsapi/req_seeder');
   const data = await res.json();
 
   dispatch(loadData(data));

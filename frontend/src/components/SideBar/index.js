@@ -219,7 +219,7 @@ const DashboardSidebar = (props) => {
             component={RouterLink}
             fullWidth
             sx={{ mt: 2 }}
-            onClick={() => fetch('http://localhost:5000/api/betsapi/update_events')}
+            onClick={() => fetch('https://opbets.onrender.com/api/betsapi/update_events')}
             variant="contained"
           >
             Update Odds

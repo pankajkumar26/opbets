@@ -6,7 +6,7 @@ function UsersList() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("http://localhost:5000/api/users/");
+      const response = await fetch("https://opbets.onrender.com/api/users/");
       const responseData = await response.json();
       setUsers(responseData.users);
     }

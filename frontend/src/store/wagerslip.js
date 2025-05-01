@@ -22,9 +22,9 @@ export const submitWager =
     const formatLeadingSign = (numStr) => {
       return parseInt(numStr).toString();
     };
-    //1. send db_predictions_id in req.body to http://localhost:5000/api/wagers/
+    //1. send db_predictions_id in req.body to https://opbets.onrender.com/api/wagers/
     console.log('highest', highest);
-    const res = await fetch('http://localhost:5000/api/wagers/add', {
+    const res = await fetch('https://opbets.onrender.com/api/wagers/add', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -46,8 +46,8 @@ export const submitWager =
 
 export const submitWagerAA =
   (user_id, db_predictions_id, amount) => async (dispatch) => {
-    //1. send db_predictions_id in req.body to http://localhost:5000/api/wagers/
-    const res = await fetch('http://localhost:5000/api/wagers/add', {
+    //1. send db_predictions_id in req.body to https://opbets.onrender.com/api/wagers/
+    const res = await fetch('https://opbets.onrender.com/api/wagers/add', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -38,7 +38,7 @@ export const restoreUser = () => async (dispatch) => {
 };
 
 export const updateBalance = (user_id) => async (dispatch) => {
-  const res = await fetch(`http://localhost:5000/api/users/${user_id}`);
+  const res = await fetch(`https://opbets.onrender.com/api/users/${user_id}`);
   const data = await res.json();
 
   dispatch(update_balance(data.balance));

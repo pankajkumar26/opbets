@@ -41,7 +41,7 @@ export default function EventsPage() {
 
   //*************************************** */
 
-  setInterval(() => fetch('http://localhost:5000/api/betsapi/update_events'), 4000000);
+  setInterval(() => fetch('https://opbets.onrender.com/api/betsapi/update_events'), 4000000);
 
   //*************************************** */
   return (
